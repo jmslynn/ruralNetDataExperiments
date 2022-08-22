@@ -1,0 +1,5 @@
+"date"	"_id"	"time"	"ipAddress"	"uploadSpeed"	"downloadSpeed"	"ping"	"city"	"latitude"	"longitude"	"internetProvider"	"__v"	"userID"
+"2020-10-26"	"5f96f623f4cd410cb8d67b65"	"16:15:10.199"	"199.21.137.7"	35.25	84.31	6.2				"Topsham Communications LLC"	0	
+"2020-10-26"	"5f96f823cf080500042c0bd4"	"16:23:31.683"	"199.21.137.7"	0.11	26.5	37.02	"Orford, NH"	43.90912	-72.1321984	"Topsham Communications LLC"	0	
+"2020-10-26"	"5f970041eee02e60cf71851e"	"16:58:15.722"		0	1967.4	1.55	"Orford, NH"	43.90912	-72.1321984		0	
+"2020-10-26"	"5f9709a9d5d2110004381677"	"17:38:37.015"	"199.21.137.7"		26.93	35.5	"Orford, NH"	43.90912	-72.1321984	"Topsham Communications LLC"	0	

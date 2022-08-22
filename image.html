@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Images and Text</title>
+</head>
+<body>
+  <img src="" id="iceland" width=480 alt="">
+  <p id="text"></p>
+
+  <!-- other things to do: fetch multiple images, fetch a text file -->
+  <script>
+    
+
+    catchIceland()
+    .them(response => {
+      console.log('done!');
+    })
+    .catch(error => {
+      console.log('error!');
+      console.error(error);
+    });
+
+    async function catchIceland() {
+      console.log('fetching picture from Iceland');
+      const response = await fetch('IMG_4498.jpeg');
+      const blob = await response.blob();
+      document.getElementById('iceland').src = URL.createObjectURL(blob);
+    }
+
+catchText()
+.them(response => {
+      console.log('done!');
+    })
+    .catch(error => {
+      console.log('error!');
+      console.error(error);
+    });
+
+async function catchText() {
+  console.log('fetching text');
+  const response = await fetch('');
+  const text = await response.text();
+  document.getElementById('text').src = URL.createObjectURL(text);
+}
+
+  </script>
+</body>
+</html>
