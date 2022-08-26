@@ -14,16 +14,18 @@
     async function getData() {
     const response = await fetch('test.csv');
     const data = await response.text();
-    // console.log(data);
 
     //need to better parse out the junk, can I get a better starter file next time?
     const modData = data.replace(/"/gi,'');
-    console.log(modData);
+    // const mod2Data = data.replace('\s','');
     const rows = modData.split('\n').slice(1);
-    console.log(rows);
     rows.forEach(elt => {
       const row = elt.split(/\t/);
-    console.log(row);
+      console.log(row);
+      // delete element in parent array based on data 
+      const city = row[7];
+      const upSpeed = row[4];
+    console.log(city, upSpeed);
     });
     
     }
