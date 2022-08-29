@@ -18,13 +18,13 @@
     //need to better parse out the junk, can I get a better starter file next time?
     const modData = data.replace(/"/gi,'');
     // const mod2Data = data.replace('\s','');
-    const rows = modData.split('\n').slice(1);
-    rows.forEach(elt => {
-      const row = elt.split(/\t/);
-      console.log(row);
+    const table = modData.split('\n').slice(1);
+    table.forEach(row => {
+      const columns = row.split(/\t/);
+      console.log(columns);
       // delete element in parent array based on data 
-      const city = row[7];
-      const upSpeed = row[4];
+      const city = columns[7];
+      const upSpeed = columns[4];
     console.log(city, upSpeed);
     });
     
