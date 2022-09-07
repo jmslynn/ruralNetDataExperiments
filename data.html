@@ -23,9 +23,11 @@
       const columns = row.split(/\t/);
       console.log(columns);
       // delete element in parent array based on data 
+      if (columns[7] != '' && columns[4] > 0) {
       const city = columns[7];
       const upSpeed = columns[4];
     console.log(city, upSpeed);
+      }
     });
     
     }
